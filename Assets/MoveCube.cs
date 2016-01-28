@@ -9,13 +9,13 @@ public class MoveCube : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            int current_Cube = gameObject.GetComponent<CubeColor>().selectedcube;
+            int current_Cube = gameObject.GetComponent<CubeColor>().selectedCube;
             GameObject cube = GameObject.Find("Cube" + current_Cube);
             cube.transform.Translate(new Vector3(0, 1, 0));
         }
         if (Input.GetKeyDown(KeyCode.DownArrow))
         {
-            int current_Cube = gameObject.GetComponent<CubeColor>().selectedcube;
+            int current_Cube = gameObject.GetComponent<CubeColor>().selectedCube;
             GameObject cube = GameObject.Find("Cube" + current_Cube);
             cube.transform.Translate(new Vector3(0, -1, 0));
         }
